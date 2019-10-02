@@ -6,4 +6,5 @@ RUN sudo docker-php-ext-install mysqli pdo_mysql
 RUN sudo apt-get update && \
     sudo apt-get install -y libicu-dev gettext-base && \
     sudo docker-php-ext-configure intl && \
-    sudo docker-php-ext-install intl
+    sudo docker-php-ext-install intl && \
+    sudo docker-php-ext-install bcmath
