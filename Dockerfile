@@ -1,4 +1,4 @@
-FROM circleci/php:7.3-cli-node
+FROM circleci/php:7.4-cli-node
 MAINTAINER contato@fjorgemota.com
 RUN echo no | sudo pecl install -f apcu
 RUN sudo docker-php-ext-enable apcu
@@ -8,4 +8,5 @@ RUN sudo apt-get update && \
     sudo docker-php-ext-configure intl && \
     sudo docker-php-ext-install intl && \
     sudo docker-php-ext-install bcmath && \
-    sudo docker-php-ext-install gd
+    sudo docker-php-ext-install gd && \
+    sudo docker-php-ext-install zip
