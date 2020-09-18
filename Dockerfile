@@ -11,5 +11,6 @@ RUN sudo apt-get update && \
     sudo docker-php-ext-install intl && \
     sudo docker-php-ext-install bcmath && \
     sudo docker-php-ext-install gd && \
+    sudo docker-php-ext-install pcntl && \
     sudo docker-php-ext-install zip && \
     sudo docker-php-ext-enable imagick 
